@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curcumy - oficial</title>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    // eslint-disable-next-line no-undef
+    fbq('init', "2556646064501050");
+    // eslint-disable-next-line no-undef
+    fbq('track', 'PageView');
+    
+    //booster braip
+    (function (w, d, s, t) {
+      if (w._brpBstr) return; w._brpBstr = t; var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true; j.src = "https://ev.braip.com/js/braip-booster.js?v=" + t;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', Date.now());
+  </script>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
